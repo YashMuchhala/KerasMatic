@@ -1,5 +1,6 @@
 # Dataset ignore
 **/input/
+**/models/
 
 # VS Code
 .vscode/

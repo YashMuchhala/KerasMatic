@@ -25,7 +25,7 @@ SECRET_KEY = '$aw$(s3vo+h5b=(eye0f4&dax@9xfm6*479v$6rv&1d)0t0+%c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'recommender',
-    'web',
+    'recommender.apps.RecommenderConfig',
+    'web.apps.WebConfig',
 ]
 
 MIDDLEWARE = [
