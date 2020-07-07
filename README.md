@@ -4,12 +4,14 @@ KerasMatic was a Top 10 solution in TSEC Hackathon 2020 using the [Movielens dat
 
 ### Implementation
 
-Step 1: Search for a movie
-Step 2: Select a type of recommendation (Content-based/)
-Step 3: Done!
-![Screencapture 1](https://raw.githubusercontent.com/yashmuchhala/KerasMatic/master/assets/1.gif "Collaborative Filtering")
-![Screencapture 2](https://raw.githubusercontent.com/yashmuchhala/KerasMatic/master/assets/2.gif "Content-based")
-![Screencapture 3](https://raw.githubusercontent.com/yashmuchhala/KerasMatic/master/assets/3.gif "Hybrid")
+Steps:
+
+1. Search for a movie
+2. Select a type of recommendation (Content-based/Collaborative filtering/Hybrid)
+3. Done!
+   ![Screencapture 1](https://raw.githubusercontent.com/yashmuchhala/KerasMatic/master/assets/1.gif "Collaborative Filtering")
+   ![Screencapture 2](https://raw.githubusercontent.com/yashmuchhala/KerasMatic/master/assets/2.gif "Content-based")
+   ![Screencapture 3](https://raw.githubusercontent.com/yashmuchhala/KerasMatic/master/assets/3.gif "Hybrid")
 
 ### Steps to install
 
