@@ -29,4 +29,4 @@ Steps:
 
 ### Contributors
 
-[![](https://github.com/BhavyaAhir.png?size=50)](https://github.com/Bhavya-Ahir)
+[![](https://github.com/Bhavya-Ahir.png?size=50)](https://github.com/Bhavya-Ahir)
