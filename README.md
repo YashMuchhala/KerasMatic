@@ -23,7 +23,7 @@ Steps:
    `pipenv install`
 
 3. Start the django server
-   `python manage.py runserver`
+   `python main/manage.py runserver`
 
 4. Open the browser and find the website at `localhost:8000`.
 
