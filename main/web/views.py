@@ -9,7 +9,7 @@ from .apps import WebConfig as config
 def index(request):
 
     movie = request.GET.get(
-        'search', "Jumanji (1995)")
+        'search', "Casper (1995)")
     filter_type = request.GET.get('type', 'collaborative')
     print(movie)
     movie_id = config.RELATIONAL_DATA[config.RELATIONAL_DATA['title']
@@ -47,3 +47,43 @@ def index(request):
         "user_id": USER_ID,
     }
     return render(request, 'web/index.html', context=context)
+
+
+def splash(request):
+    context = {
+        "starter_movies": [
+            {
+                "title": "Treasure Island (1950)",
+                "url": "https://m.media-amazon.com/images/M/MV5BMWMzZDM5ZTEtNDY2Yi00NjhjLTkwZjgtYjQ2MjVlMGZhYmQ2XkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_UY268_CR1,0,182,268_AL__QL50.jpg",
+            },
+            {
+                "title": "Godfather, The (1972)",
+                "url": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL__QL50.jpg",
+            },
+            {
+                "title": "Reservoir Dogs (1992)",
+                "url": "https://m.media-amazon.com/images/M/MV5BZmExNmEwYWItYmQzOS00YjA5LTk2MjktZjEyZDE1Y2QxNjA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+            },
+            {
+                "title": "Pulp Fiction (1994)",
+                "url": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR1,0,182,268_AL__QL50.jpg",
+            },
+            {
+                "title": "Star Wars: Episode IV - A New Hope (1977)",
+                "url": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+            },
+            {
+                "title": "Silence of the Lambs, The (1991)",
+                "url": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+            },
+            {
+                "title": "Reservoir Dogs (1992)",
+                "url": "https://m.media-amazon.com/images/M/MV5BZmExNmEwYWItYmQzOS00YjA5LTk2MjktZjEyZDE1Y2QxNjA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+            },
+            {
+                "title": "Pulp Fiction (1994)",
+                "url": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR1,0,182,268_AL__QL50.jpg",
+            },
+        ]
+    }
+    return render(request, 'web/splash.html', context=context)

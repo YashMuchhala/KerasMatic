@@ -27,28 +27,12 @@
     <!-- START PAGE SOURCE -->
     <div id="shell">
       <div id="header">
-        <h1 style="text-align: center; size: 96px; font-size: 108px; color: white;">KerasMatic</h1>
-        <div id="sub-navigation">
-          <ul>
-            <li><a href="#">Machine Learning based Movie Recommendation System<br></a></li>
-          </ul>
-          <div id="search">
-          </div>
-          <div id="search">
-            <form style="font-size: 16px; color: white; font-weight: bold;" action="#" method="get" accept-charset="utf-8">
-              <input type="radio" name="type" value="collaborative">Collaborative
-<input type="radio" name="type" value="content">Content
-<input type="radio" name="type" value="hybrid">Hybrid
-              <input
-                type="text"
-                name="search"
-                id="search-field"
-                class="blink search-field"
-              />
-              <input type="submit" value="SEARCH" class="search-button" />
-            </form>
-          </div>
-        </div>
+        <br /><br /><br /><br />
+        <h1
+          style="text-align: center; size: 96px; font-size: 48px; color: white"
+        >
+          Select a movie you like
+        </h1>
       </div>
       <div id="main">
         <div id="content">
@@ -56,28 +40,27 @@
             <div class="head">
               <h2 style="color: transparent;"></h2>
             </div>
-            {% for movie in movie_recommendations_1 %}
+            {% for movie in starter_movies %}
             <div class="movie">
-              <div class="movie-image">
-                <span class="play"><span class="name">{{ movie.title }}</span></span>
-                <a href="#"><img src="{{ movie.url }}" alt=""/></a>
-              </div>
-              <div class="rating">
-                <p>RATING</p>
-                <div class="stars">
-                  <div class="stars-in"></div>
+              <form action="/" method="get" accept-charset="utf-8">
+                <div class="movie-image">
+                  <span class="play"
+                    ><span class="name">{{ movie.title }}</span></span
+                  >
+                  <input
+                    type="image"
+                    name="movie"
+                    value="{{ movie.title }}"
+                    src="{{ movie.url }}"
+                    alt=""
+                  />
                 </div>
-                <span class="comments">12</span>
-              </div>
+              </form>
             </div>
+            <br />
             {% endfor %}
-            <div class="cl">&nbsp;</div>
           </div>
-      <div id="footer">
-        <p class="lf">
-          Copyright &copy; 2020 <a href="#">KerasMatic</a> - All Rights Reserved
-        </p>
-        <div style="clear:both;"></div>
+        </div>
       </div>
     </div>
   </body>
