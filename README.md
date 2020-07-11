@@ -1,6 +1,6 @@
 # KerasMatic: Machine Learning Enabled Movie Recommendation API
 
-KerasMatic was a Top 10 solution in TSEC Hackathon 2020 using the [Movielens dataset](https://grouplens.org/datasets/movielens/).
+KerasMatic was a Top 10 solution at TSEC Hackathon 2020 using the [Movielens dataset](https://grouplens.org/datasets/movielens/).
 
 ### Implementation
 
